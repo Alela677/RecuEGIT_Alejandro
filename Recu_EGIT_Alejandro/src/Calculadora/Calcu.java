@@ -19,7 +19,7 @@ public class Calcu {
 		System.out.println("Intoruduce el segundo numero");
 		num2 = Integer.parseInt(sc.nextLine());
 		System.out.println("Eliga una opcion");
-		System.out.println("1. Sumar\n2. Restar");
+		System.out.println("1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir");
 		opc = Integer.parseInt(sc.nextLine());
 	
 		switch (opc) {
@@ -31,6 +31,14 @@ public class Calcu {
 	case 2:
 		System.out.println("RESTA");
 		System.out.println(num1 - num2);
+		break;	
+	case 3:
+		System.out.println("MULTIPLICACION");
+		System.out.println(num1 + num2);
+		break;	
+	case 4:
+		System.out.println("DIVISION");
+		System.out.println(num1 / num2);
 		break;	
 	default:
 		break;
